@@ -5,7 +5,7 @@ services:
     restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /secrets:/secrets:ro
+      - ${SECRETS_PATH}:/secrets:ro
       - ${GLOBAL_VOLUMES_PATH}/00-portainer/data:/data
     ports:
       - 9443:9443
