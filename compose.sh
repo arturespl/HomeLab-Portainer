@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker compose --env-file ./.env -d
+docker compose --env-file ./.env up -d
