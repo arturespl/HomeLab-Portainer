@@ -8,6 +8,6 @@ services:
     volumes:
       - /var/docker-configs:/var/docker-configs:ro
       - /var/run/docker.sock:/var/run/docker.sock
-      - ${GLOBAL_VOLUMES_PATH}/portainer/data:/data
+      - ${GLOBAL_VOLUMES_PATH}/00-portainer/data:/data
     ports:
       - 9443:9443
